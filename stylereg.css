@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+    background-color: #3C3D37;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    background-color: #697565;
+}
+
+::placeholder {
+    color: #ECDFCC !important; /* Adds !important */
+    opacity: 1;
+}

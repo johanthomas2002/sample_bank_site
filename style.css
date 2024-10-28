@@ -1,0 +1,77 @@
+body{
+    background-color: #000000;
+}
+
+/* Navbar */
+nav {
+    background-color: black;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #ECDFCC;
+    margin-right: 20px;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+    border: 1px solid rgb(131, 124, 124);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Adjust margin for smaller screens */
+@media (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+}
+/* Navbar */
+
+#banner {
+    width: 100%;
+    height: 623px;
+    background-image: url('./images/banner.avif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally on small screens */
+} 
+
+.buttons {
+    margin-left: 0; /* Default margin for smaller screens */
+}
+
+.buttons .btn {
+    background-color: transparent;
+    border: 2px solid #697565;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Adjust styles for larger screens */
+@media (min-width: 992px) {
+    #banner {
+        justify-content: flex-start;
+    }
+
+    .buttons {
+        margin-left: 100px;
+    }
+}
+
+/* Adjust button width and font size on smaller screens */
+@media (max-width: 767px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons .btn {
+        width: 150px;
+        font-size: 16px;
+    }
+}
+
+
